@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Chart Search</title>
+    <style>
+      body {
+        background-image: url("https://www.investopedia.com/thmb/1DCEpGq8bqLqadT3SJ45znVrh9c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1403956998-ca3b1a52340b4f428f56113a5c337c6f.jpg");
+        background-size: cover;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20vh auto;
+        color: #fff;
+      }
+
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      /* Marquee Styles */
+      .marquee {
+        font-size: 18px;
+        font-weight: bold;
+        color: #050505;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: marquee 20s linear infinite;
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="marquee">Developed by Tara Nath Poudel</div> -->
+    <form action="https://nepsealpha.com/trading/chart" target="_blank">
+      <input
+        autocomplete="off"
+        autofocus
+        name="symbol"
+        placeholder="Type a stock symbol"
+        type="search"
+      />
+      <input type="submit" value="View Stock Chart" />
+    </form>
+  </body>
+</html>
